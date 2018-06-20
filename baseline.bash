@@ -30,6 +30,7 @@ vmstat >> log.txt
 printf '\n =============================Network & Firewall Information============================= \n' >> log.txt
 #current network interfaces#
 ifconfig -a >> log.txt
+#will display all information about currently used tcp,udp,listening ports,programs using ports#
 netstat -tulpn >> log.txt
 #will display just tcp, udp connection for all sessions#
 netstat -tua >> log.txt
