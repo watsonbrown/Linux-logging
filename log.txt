@@ -1,0 +1,230 @@
+
+#baseline information for linux based systems being checked#
+
+ =============================Computer Information============================= 
+test-VirtualBox
+Thu Jun 14 11:40:03 CDT 2018
+ 11:40:03 up  3:46,  3 users,  load average: 0.70, 2.22, 1.40
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+test     :0       :0               07:54   ?xdm?   1:19m  0.53s init --user
+test     pts/1    :0               08:33    2:47m  0.14s  0.14s bash
+test     pts/4    10.0.2.2         10:19    0.00s  0.14s  0.00s w
+test
+Linux test-VirtualBox 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+test adm cdrom sudo dip plugdev lpadmin sambashare
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+messagebus:x:102:106::/var/run/dbus:/bin/false
+usbmux:x:103:46:usbmux daemon,,,:/home/usbmux:/bin/false
+dnsmasq:x:104:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+avahi-autoipd:x:105:113:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+kernoops:x:106:65534:Kernel Oops Tracking Daemon,,,:/:/bin/false
+rtkit:x:107:114:RealtimeKit,,,:/proc:/bin/false
+saned:x:108:115::/home/saned:/bin/false
+whoopsie:x:109:116::/nonexistent:/bin/false
+speech-dispatcher:x:110:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/sh
+avahi:x:111:117:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+lightdm:x:112:118:Light Display Manager:/var/lib/lightdm:/bin/false
+colord:x:113:121:colord colour management daemon,,,:/var/lib/colord:/bin/false
+hplip:x:114:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+pulse:x:115:122:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+test:x:1000:1000:test,,,:/home/test:/bin/bash
+sshd:x:116:65534::/var/run/sshd:/usr/sbin/nologin
+
+ =============================Directory & Process Information============================= 
+  PID TTY          TIME CMD
+ 5453 pts/4    00:00:00 bash
+ 5461 pts/4    00:00:00 ps
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+udev /dev devtmpfs rw,relatime,size=2013108k,nr_inodes=503277,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+tmpfs /run tmpfs rw,nosuid,noexec,relatime,size=404760k,mode=755 0 0
+/dev/disk/by-uuid/a96c2a1c-bd3e-4808-922b-01fd887c1412 / ext4 rw,relatime,errors=remount-ro,data=ordered 0 0
+none /sys/fs/cgroup tmpfs rw,relatime,size=4k,mode=755 0 0
+none /sys/fs/fuse/connections fusectl rw,relatime 0 0
+none /sys/kernel/debug debugfs rw,relatime 0 0
+none /sys/kernel/security securityfs rw,relatime 0 0
+none /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k 0 0
+none /run/shm tmpfs rw,nosuid,nodev,relatime 0 0
+none /run/user tmpfs rw,nosuid,nodev,noexec,relatime,size=102400k,mode=755 0 0
+none /sys/fs/pstore pstore rw,relatime 0 0
+systemd /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,name=systemd 0 0
+gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+init-+-ModemManager---2*[{ModemManager}]
+     |-NetworkManager-+-dhclient
+     |                |-dnsmasq
+     |                `-3*[{NetworkManager}]
+     |-accounts-daemon---2*[{accounts-daemon}]
+     |-acpid
+     |-avahi-daemon---avahi-daemon
+     |-bluetoothd
+     |-colord---2*[{colord}]
+     |-cron
+     |-cups-browsed
+     |-cupsd
+     |-dbus-daemon
+     |-6*[getty]
+     |-kerneloops
+     |-lightdm-+-Xorg
+     |         |-lightdm-+-init-+-at-spi-bus-laun-+-dbus-daemon
+     |         |         |      |                 `-3*[{at-spi-bus-laun}]
+     |         |         |      |-at-spi2-registr---{at-spi2-registr}
+     |         |         |      |-bamfdaemon---3*[{bamfdaemon}]
+     |         |         |      |-dbus-daemon
+     |         |         |      |-dconf-service---2*[{dconf-service}]
+     |         |         |      |-evolution-calen---4*[{evolution-calen}]
+     |         |         |      |-evolution-sourc---2*[{evolution-sourc}]
+     |         |         |      |-gconfd-2
+     |         |         |      |-gnome-keyring-d---5*[{gnome-keyring-d}]
+     |         |         |      |-gnome-session-+-compiz---4*[{compiz}]
+     |         |         |      |               |-deja-dup-monito---3*[{deja-dup-monito}]
+     |         |         |      |               |-nautilus---3*[{nautilus}]
+     |         |         |      |               |-nm-applet---2*[{nm-applet}]
+     |         |         |      |               |-polkit-gnome-au---2*[{polkit-gnome-au}]
+     |         |         |      |               |-telepathy-indic---2*[{telepathy-indic}]
+     |         |         |      |               |-unity-fallback----2*[{unity-fallback-}]
+     |         |         |      |               |-update-notifier---3*[{update-notifier}]
+     |         |         |      |               |-zeitgeist-datah---3*[{zeitgeist-datah}]
+     |         |         |      |               `-3*[{gnome-session}]
+     |         |         |      |-gnome-terminal-+-bash
+     |         |         |      |                |-gnome-pty-helpe
+     |         |         |      |                `-3*[{gnome-terminal}]
+     |         |         |      |-gvfs-afc-volume---2*[{gvfs-afc-volume}]
+     |         |         |      |-gvfs-gphoto2-vo---{gvfs-gphoto2-vo}
+     |         |         |      |-gvfs-mtp-volume---{gvfs-mtp-volume}
+     |         |         |      |-gvfs-udisks2-vo---2*[{gvfs-udisks2-vo}]
+     |         |         |      |-gvfsd---{gvfsd}
+     |         |         |      |-gvfsd-burn---2*[{gvfsd-burn}]
+     |         |         |      |-gvfsd-fuse---4*[{gvfsd-fuse}]
+     |         |         |      |-gvfsd-metadata---{gvfsd-metadata}
+     |         |         |      |-gvfsd-trash---4*[{gvfsd-trash}]
+     |         |         |      |-hud-service---3*[{hud-service}]
+     |         |         |      |-ibus-daemon-+-ibus-dconf---3*[{ibus-dconf}]
+     |         |         |      |             |-ibus-engine-sim---2*[{ibus-engine-sim}]
+     |         |         |      |             |-ibus-ui-gtk3---3*[{ibus-ui-gtk3}]
+     |         |         |      |             `-2*[{ibus-daemon}]
+     |         |         |      |-ibus-x11---3*[{ibus-x11}]
+     |         |         |      |-indicator-appli---{indicator-appli}
+     |         |         |      |-indicator-bluet---2*[{indicator-bluet}]
+     |         |         |      |-indicator-datet---5*[{indicator-datet}]
+     |         |         |      |-indicator-keybo---3*[{indicator-keybo}]
+     |         |         |      |-indicator-messa---3*[{indicator-messa}]
+     |         |         |      |-indicator-power---2*[{indicator-power}]
+     |         |         |      |-indicator-print---2*[{indicator-print}]
+     |         |         |      |-indicator-sessi---2*[{indicator-sessi}]
+     |         |         |      |-indicator-sound---3*[{indicator-sound}]
+     |         |         |      |-mission-control---2*[{mission-control}]
+     |         |         |      |-notify-osd---2*[{notify-osd}]
+     |         |         |      |-pulseaudio---2*[{pulseaudio}]
+     |         |         |      |-unity-files-dae---4*[{unity-files-dae}]
+     |         |         |      |-unity-panel-ser---2*[{unity-panel-ser}]
+     |         |         |      |-unity-scope-hom---2*[{unity-scope-hom}]
+     |         |         |      |-unity-scope-loa---3*[{unity-scope-loa}]
+     |         |         |      |-unity-settings----3*[{unity-settings-}]
+     |         |         |      |-2*[upstart-dbus-br]
+     |         |         |      |-upstart-event-b
+     |         |         |      |-upstart-file-br
+     |         |         |      |-window-stack-br
+     |         |         |      |-zeitgeist-daemo---{zeitgeist-daemo}
+     |         |         |      `-zeitgeist-fts-+-cat
+     |         |         |                      `-2*[{zeitgeist-fts}]
+     |         |         `-{lightdm}
+     |         `-2*[{lightdm}]
+     |-polkitd---2*[{polkitd}]
+     |-rsyslogd---3*[{rsyslogd}]
+     |-rtkit-daemon---2*[{rtkit-daemon}]
+     |-sshd-+-sshd---sshd---sftp-server
+     |      `-sshd---sshd---bash---bash---pstree
+     |-systemd-logind
+     |-systemd-udevd
+     |-udisksd---4*[{udisksd}]
+     |-upowerd---2*[{upowerd}]
+     |-upstart-file-br
+     |-upstart-socket-
+     |-upstart-udev-br
+     `-whoopsie---2*[{whoopsie}]
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 2591848 116120 824104    0    0    53    47  194  627 37  3 59  1  0
+
+ =============================Network & Firewall Information============================= 
+eth0      Link encap:Ethernet  HWaddr 08:00:27:d4:f7:29  
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fed4:f729/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:11686 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:6705 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:8934435 (8.9 MB)  TX bytes:975652 (975.6 KB)
+
+eth1      Link encap:Ethernet  HWaddr 08:00:27:65:9e:1f  
+          inet6 addr: fe80::a00:27ff:fe65:9e1f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:198 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3531 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:18462 (18.4 KB)  TX bytes:687869 (687.8 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:3438 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3438 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:311602 (311.6 KB)  TX bytes:311602 (311.6 KB)
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -               
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      -               
+tcp6       0      0 :::22                   :::*                    LISTEN      -               
+tcp6       0      0 ::1:631                 :::*                    LISTEN      -               
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:37861           0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:44560           0.0.0.0:*                           -               
+udp        0      0 127.0.1.1:53            0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -               
+udp6       0      0 :::49756                :::*                                -               
+udp6       0      0 :::5353                 :::*                                -               
+udp6       0      0 :::26185                :::*                                -               
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 test-VirtualBox:domain  *:*                     LISTEN     
+tcp        0      0 *:ssh                   *:*                     LISTEN     
+tcp        0      0 localhost:ipp           *:*                     LISTEN     
+tcp        0      0 10.0.2.15:ssh           10.0.2.2:58088          ESTABLISHED
+tcp        0      0 10.0.2.15:ssh           10.0.2.2:58169          ESTABLISHED
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+tcp6       0      0 ip6-localhost:ipp       [::]:*                  LISTEN     
+tcp6       1      0 ip6-localhost:35060     ip6-localhost:ipp       CLOSE_WAIT 
+udp        0      0 *:ipp                   *:*                                
+udp        0      0 *:37861                 *:*                                
+udp        0      0 *:mdns                  *:*                                
+udp        0      0 *:44560                 *:*                                
+udp        0      0 test-VirtualBox:domain  *:*                                
+udp        0      0 *:bootpc                *:*                                
+udp6       0      0 [::]:49756              [::]:*                             
+udp6       0      0 [::]:mdns               [::]:*                             
+udp6       0      0 [::]:26185              [::]:*                             

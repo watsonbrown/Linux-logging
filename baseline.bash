@@ -1,7 +1,6 @@
-#notes
-#this script is only designed to be run once (as all appended to log.txt) to establish a baseline configuration of a linux based
-#you can change the outputs  after each ">>" if you wish to place it somewhere else
-printf '\n#baseline information for linux based systems being checked#\n' >> log.txt
+
+#!/bin/bash
+printf '\n#baseline information for linux based systems being checked#\n' > log.txt
 printf '\n =============================Computer Information============================= \n' >> log.txt
 #displays hostname of computer#
 hostname >> log.txt
@@ -31,10 +30,11 @@ vmstat >> log.txt
 printf '\n =============================Network & Firewall Information============================= \n' >> log.txt
 #current network interfaces#
 ifconfig -a >> log.txt
-#will display all information about currently used tcp,udp,listening ports,programs using ports#
 netstat -tulpn >> log.txt
 #will display just tcp, udp connection for all sessions#
 netstat -tua >> log.txt
 #show currently configured iptables, firewall information and rules configured#
-sudo iptables -L -n >> log.txt 
-Echo "Baseline log file has been created on desktop - hal 9000" 
+#iptables -L -n >> log.txt 
+#cat log.txt? >> intiallog.txt
+echo "Baseline log file has been created on desktop - hal 9000" 
+
