@@ -1,4 +1,4 @@
-#notes for future reference test pull
+#notes for future reference test pull again
 #this script is only designed to be run once (as all appended to log.txt) to establish a baseline configuration of a linux based
 #you can change the outputs  after each ">>" if you wish to place it somewhere else
 printf '\n#baseline information for linux based systems being checked#\n' >> log.txt
